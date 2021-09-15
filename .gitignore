@@ -1,0 +1,5 @@
+objects/**
+files/**
+*.sh
+*.exe
+trab1-pesquisa-ordenacao
