@@ -1,54 +1,24 @@
-# Sistema de controle para times esportivos
-Este repositório foi criado e editado por mim para o trabalho A3 da disciplina de Programação Orientada a Objetos ministrada pelo professor [Vinicius Cassol](https://github.com/vinicassol) do curso de Ciência da Computação da Universidade Ritter dos Reis. O objetivo é desenvolver um sistema simples de controle para times esportivos em C++ aplicando os conceitos e técnicas que aprendemos em aula. Segue também [Link Video](https://youtu.be/fBeSjD7HrCo) com algumas explicações do funcionamento.
+# Sistema para geração de arquivos em C
+Este repositório foi criado e editado por mim para o trabalho A1 da disciplina de Pesquisa, Ordenação e Técnicas de Armazenamento pelo professor Jader Marques da Silva do curso de Ciência da Computação da Universidade Ritter dos Reis. O objetivo é desenvolver um sistema simples para gerar arquivos com as especificações assinaladas pelo professor.
 
 
 ## O Desafio
 O desafio do exercicio é resolver todos os problemas propostos no enunciado do projeto disponibilizado pelo mestre do curso. Então, temos como objetivos:
-1. **Criar uma classe para representar um `Jogador` e esta classe deve:**
-	- Implementar os atributos:
-		- Nome
-		- Id (Esta é uma informação única e gerada automaticamente)
-		- Data de nascimento
-		- Nacionalidade
-		- Categoria de Atuação (Profissional/Base)
-		- Salário bruto mensal
-	- Fazer Getters e Setters para todos os atributos
-	- Desenvolver um método para calcular a idade do jogador
-	- Criar um método para mostrar quanto tempo falta para o jogador se aposentar
-	- Construir um método para calcular o salário líquido. Para calcular o salário líquido, deve-se descontar o valor de INSS e o Valor de Imposto Retido na conta. Para isso, considere a tabela a seguir:
-   
 
-		|   FAIXA SALARIAL     |  INSS  | IRRF  |
-		| :---                 |  :---: | :---: |
-		| ATÉ R$ 1100,00       |   7.5% |   0%  |
-		| ATÉ R$ 2000,00       |     9% | 7.5%  |
-		| ATÉ R$ 3100,00       |    12% |  15%  |
-		| ATÉ R$ 4.100,00      |    14% |  22%  |
-		| ACIMA DE R$ 4.100,00 |    14% |  27%  |
+	- Criar um arquivo texto e gerar uma sequência aleatória de números separados por “;” (ponto e vírgula).O usuário deverá inserir quantos números deseja gerar no arquivo (no mínimo 100 números).
+	- Após a geração do arquivo, o programa deverá ter uma função para carregar o arquivo. Ao carregar o arquivo, o programa deverá armazenar os valores em um array.
+	- O programa também deverá possuir as seguintes funcionalidades, após a execução das etapas anteriores:
+-  opção para inversão dos elementos do arquivo (ou seja, o programa deverá ter uma função de gerar um novo arquivo com os elementos invertidos).
 
+-  opção de geração de um novo arquivo com os elementos ordenados.
 
-2. **Criar classe para representar um `Time`  e esta classe deve:**
-	- Implementar os atributos:
-		- Nome
-		- Id (Esta é uma informação única e gerada automaticamente)
-		- Categoria (Profissional/Base)
-		- Conjunto de jogadores que fazem parte do time
-	- Fazer Getters e Setters para todos os atributos
-	- Desenvolver um relatório geral que apresente o nome do time e os dados de todos os seus jogadores
-	- Criar um relatório financeiro para apresentar o nome de todos os jogadores ativos do time, seu respectivo salário bruto e líquido
+- opção de geração de um novo arquivo com o maior e o menor número encontrado no arquivo e a média de todos os números do arquivo.
 
-
-3. **Crie uma classe que represente uma `Empresa`. Esta classe será responsável por gerenciar vários times, com os atributos que julgar conveniente. Ela deve:**
-	- Implementar uma consulta de jogador que pode receber um nome ou ID e apresentar de qual time o jogador faz parte, seus dados pessoais(nome/idade), seu salário bruto e líquido
-	- Desenvolver um método para listar os jogadores. Similar ao método anterior, apresenta uma lista com todos os jogadores que fazem parte da empresa
-	- Criar um relatório financeiro. Para cada time gerenciado pela empresa, apresentar o relatório contendo os custos totais de cada time, destacando:
-		- Valor a ser pago em salários
-		- Valor a ser destinado ao INSS
-		- Valor retido a ser pago ao imposto de renda
+- opção de geração de um novo arquivo em que cada número do arquivo original é convertido para binário.
 
 
 ## A Estrutura
-A estrutura do projeto conta com um diretório chamado `source/` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.hpp`. Estes contém todas as definições das classes que usamos no código. E também foram criados os arquivos `.cpp` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será também criado um novo diretório na pasta raiz do projeto chamado `objects/` e o arquivo da aplicação chamado `sistemaControle.exe`.
+A estrutura do projeto conta com um diretório chamado `source/` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.hpp`. Estes contém todas as definições das classes que usamos no código. E também foram criados os arquivos `.cpp` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será também criado um novo diretório na pasta raiz do projeto chamado `objects/` e o arquivo da aplicação chamado `trab1-pesquisa-ordenacao`.
 
 
 ## O Build
