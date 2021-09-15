@@ -14,7 +14,7 @@ O desafio do exercicio é resolver todos os problemas propostos no enunciado do 
 
 
 ## A Estrutura
-A estrutura do projeto conta com um diretório chamado `source/` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.hpp`. Estes contém todas as definições das classes que usamos no código. E também foram criados os arquivos `.cpp` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será também criado um novo diretório na pasta raiz do projeto chamado `objects/` e o arquivo da aplicação chamado `trab1-pesquisa-ordenacao`.
+A estrutura do projeto conta com um diretório chamado `source/` onde estão todos os arquivos com código escrito. Dentro deste foram criados arquivos de cabeçalho no formato `.h`. Estes contém todas as definições das classes que usamos no código. E também foram criados os arquivos `.c` onde esta a implementação das funções definidas anteriormente. No momento em que o build é executado será também criado um novo diretório na pasta raiz do projeto chamado `objects/` e o arquivo da aplicação chamado `trab1-pesquisa-ordenacao`.
 
 
 ## O Build
@@ -23,3 +23,6 @@ Para executar o build que gera os binários e o executavel do projeto sem muitas
 
 
 - `make clean`: Serve para limpar os arquivos dos ultimos builds e não possui um retorno quando tem sucesso. É aconselhavel sempre executar antes de um `make all` para garantir que todos os arquivos serão compilados novamente. Para a execução devemos estar no mesmo diretório do arquivo `makefile`  e digitar `make clean` conforme código abaixo.
+
+## Video com explicação
+Para exemplificar gravei um [video](https://youtu.be/JmgwMrE93yU) explicando o funcionamento do programa.
